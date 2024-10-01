@@ -1,0 +1,13 @@
+.mission {
+  border-style: solid;
+  border-radius:30px;
+  width:350px;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: indigo;
+}
+.mission-text {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 20px;
+  padding: 10px;
+}
