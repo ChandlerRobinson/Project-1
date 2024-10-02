@@ -6,18 +6,23 @@ body {
 }
 
 .mission {
+  margin: 50px;
   border-style: solid;
   border-radius: 30px;
-  width: 350px;
+  width: 350px;  
+  background: rgb(228,85,148);
+  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
 }
+
 .mission-text {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 20px;
   padding: 10px;
 }
+
 
 /* NAVABAR */
 nav {
@@ -60,3 +65,18 @@ nav button i {
   padding: 3px;
   margin: 5px;
 }
+
+.mission:hover {
+  box-shadow: 0 0 100px gold;
+}
+
+.coming-soon-box {
+  border-style: solid;
+  margin: 30px;
+  background: rgb(228,85,148);
+  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: indigo;
+}
+
