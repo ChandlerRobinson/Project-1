@@ -15,11 +15,13 @@
   </head>
 
   <body>
-    <header>
+   <header>
       
-      <!-- Coolshirts store navbar -->
+      <!-- COOLSHIRTS STORE NAVBAR  -->
       <nav>
-        <h1>The Cool Shirts Store</h1>
+        <div class="logo">
+        <img src="./images/Logo.png" style="width: 100px; height: 100px; margin: 0 8px;">
+        <h1>The CoolShirts Store</h1></div>
         <div class="buttons">
         <button id="size-chart-btn"><i class="fa-solid fa-ruler-horizontal"></i><br>Size Chart</button>
         <button id="review-btn"><i class="fa-regular fa-star"></i><br>Customer Reviews</button>
@@ -38,50 +40,10 @@
 
     </header>
 
-    <main>
-      <!-- stuff goes above here -->
-    <div class="image-container">
-      <div class="border">
-        <img
-          id="images"
-          src="images/red shirt.webp"
-          alt="Images"
-          width="300"
-          max-width="300"
-          max-height="282"
-        />
-        <div class="button-container">
-          <br />
-          <!-- buttons -->
-          <div class="btndir">
-            <button
-              id="colorBlockred"
-              onclick="changeImage('images/red shirt.webp')"
-            ></button>
-            <button
-              id="colorBlockblue"
-              onclick="changeImage('images/blue shirt.webp')"
-            ></button>
-            <button
-              id="colorBlockgreen"
-              onclick="changeImage('images/green shirt.jpg')"
-            ></button>
-            <button
-              id="colorBlockyellow"
-              onclick="changeImage('images/yellow shirt.jpg')"
-            ></button>
-          </div>
-          <div class="text-container">
-            <h2>S, M, L, XL</h2>
-          </div>
-        </div>
-      </div>
-    </div>
 
-      <!-- Coolshirts picture/ gallery  -->
-      <!-- Coolshirts drop -->
-      <!-- down menus modal(s)  -->
-      <!-- Coolshirts Locally sourced text paragraph -->
+<main> <!-- MAIN "BODY" OF THE PAGE -->      
+       
+<!-- MISSION STATEMENT / MATERIALS SOURCE -->      
 
     <div class="mission">
         <h3 class="mission-title">Our Mission</h3>
@@ -94,9 +56,42 @@
         <span class="close">&times;</span>
 
 
-    </main>
-
-
+    <!-- TSHIRT CARD WITH COLOR AND SIZES -->
+    <div class="image-container">
+        <img
+            id="images"
+            src="images/red shirt.webp"
+            alt="Images"
+            width="300px"
+            max-height="282px"
+          />
+        <div class="button-container">
+            <br />
+            <!-- buttons -->
+            <div class="btndir">
+              <button
+                id="colorBlockred"
+                onclick="changeImage('images/red shirt.webp')"
+              ></button>
+              <button
+                id="colorBlockblue"
+                onclick="changeImage('images/blue shirt.webp')"
+              ></button>
+              <button
+                id="colorBlockgreen"
+                onclick="changeImage('images/green shirt.jpg')"
+              ></button>
+              <button
+                id="colorBlockyellow"
+                onclick="changeImage('images/yellow shirt.jpg')"
+              ></button>
+            </div>
+            <div class="text-container">
+              <h2>S, M, L, XL</h2>
+            </div>
+          </div>
+      </div>
+    
     <div>
         <!-- //Review Section -->
 
@@ -128,14 +123,12 @@
       </div>
 
 
+    </main>
+
       <span id="selectedSize"></span>
       <p id="confirmationMessage"></p>
 
-     <!-- Coolshirts Locally sourced text paragraph -->
-      <!-- Coolshirts -->
-    </main>
-
-    <!-- Coolshirts "Coming soon" -->
+ <!-- Coolshirts "Coming soon" / FOOTER -->
     <footer>
       <div class="coming-soon-box">
         <h3>Coming Soon!</h3>
