@@ -228,15 +228,11 @@ nav button i {
   border-style: solid;
   margin: 0px;
   padding:0px;
-  background: rgb(228,85,148);
-  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
-  margin: 30px;
   background: rgb(228, 85, 148);
   background: radial-gradient(circle,rgba(228, 85, 148, 1) 0%,rgba(63, 137, 223, 1) 100%);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
-  height:320px;
 }
 .coming-soon-box h3 {
   color:white;
@@ -250,14 +246,12 @@ nav button i {
 }
 .coming-soon-box h4 {
   color:indigo;
-  margin-bottom:60px;
 }
 .boxes {
-  border-style: solid;
-  height:100px;
-  width:100px;
   display:inline;
-  margin:60px;
+  border-style:solid;
+  border-radius:20px;
+  
 }
 .boxes:hover {
   box-shadow: 0 0 100px gold;
