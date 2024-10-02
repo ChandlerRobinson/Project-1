@@ -147,6 +147,55 @@ nav button i {
   margin: 5px;
 }
 
+/* NAVBAR MODALS */
+.size-modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(94, 94, 94, 0.574);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.size-modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.size-modal {
+  background-color: white;
+  padding: 20px 40px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#close-modal {
+  background-color: #47a386;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(137, 135, 135, 0.649);
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 16px;
+  margin: 10px 2px;
+  float: right;
+}
+
+#close-modal:hover {
+  cursor: pointer;
+}
+
+#close-modal:active {
+  background-color: #2e6e5a;
+  box-shadow: none;
+}
+/* ///////////////////////////////////////// */
+
 .mission:hover {
   box-shadow: 0 0 100px gold;
 }
