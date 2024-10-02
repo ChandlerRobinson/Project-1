@@ -1,0 +1,77 @@
+/* stuff goes above here */
+#colorBlockred {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#colorBlockblue {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#colorBlockgreen {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+#colorBlockyellow {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.image-container {
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.border {
+  border: 6px solid indigo;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 2);
+}
+.btndir {
+  display: flex;
+  flex-direction: row;
+}
+#images {
+  max-height: 282px !important;
+}
+/* stuff goes below here */

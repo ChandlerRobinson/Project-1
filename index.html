@@ -3,44 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-<html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
 
   <body>
-    <header></header>
-
-    <main>
-      //Coolshirts store navbar //Coolshirts picture/ gallery //Coolshirts drop
-      down menus modal(s) //Coolshirts Locally sourced text paragraph
-      //Coolshirts
-    </main>
-
-    <footer>//Coolshirts "Coming soon"</footer>
-  </body>
-</html>
-
-<body>
-    <h1>Shirt colors</h1>
-    <img id="image" src="C:\Users\debac\Downloads\red shirt.webp" alt="Image" width="300">
-    <br>
-    <button onclick="changeImage('C:\Users\debac\Downloads\red shirt.webp')">red button</button>
-    <button onclick="changeImage('C:\Users\debac\Downloads\blue shirt.webp')">blue button</button>
-    <button onclick="changeImage('C:\Users\debac\Downloads\green shirt.jpg')">green button</button>
-    <button onclick="changeImage('C:\Users\debac\Downloads\yellow shirt.jpg')">yellow button</button>
+    <!-- stuff goes above here -->
+    <div class="image-container">
+      <header></header>
+      <div class="border">
+        <img
+          id="images"
+          src="images/red shirt.webp"
+          alt="Images"
+          width="300"
+          max-width="300"
+          max-height="282"
+        />
+        <div class="button-container">
+          <br />
+          <!-- buttons -->
+          <div class="btndir">
+            <button
+              id="colorBlockred"
+              onclick="changeImage('images/red shirt.webp')"
+            ></button>
+            <button
+              id="colorBlockblue"
+              onclick="changeImage('images/blue shirt.webp')"
+            ></button>
+            <button
+              id="colorBlockgreen"
+              onclick="changeImage('images/green shirt.jpg')"
+            ></button>
+            <button
+              id="colorBlockyellow"
+              onclick="changeImage('images/yellow shirt.jpg')"
+            ></button>
+          </div>
+          <div class="text-container">
+            <h2>S, M, L, XL</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- stuff goes below here -->
+    <main></main>
+    <footer></footer>
     <script src="script.js"></script>
-    <footer>
-        //Coolshirts "Coming soon" 
-    
-    </footer>
-</body>
-
+  </body>
 </html>
