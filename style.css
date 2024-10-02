@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* stuff goes above here */
 #colorBlockred {
   width: 30px;
@@ -75,3 +76,87 @@
   max-height: 282px !important;
 }
 /* stuff goes below here */
+=======
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+.mission {
+  margin: 50px;
+  border-style: solid;
+  border-radius: 30px;
+  width: 350px;  
+  background: rgb(228,85,148);
+  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: indigo;
+}
+
+.mission-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 10px;
+}
+
+
+/* NAVABAR */
+nav {
+  display: flex;
+  flex: 0;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+nav h1 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: indigo;
+}
+
+nav .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 400px;
+}
+
+nav .buttons button {
+  padding: 5px;
+  margin: 5px 10px;
+  min-width: 100px;
+  min-height: 50px;
+  background: none;
+  border: none;
+  color: indigo;
+}
+
+nav .buttons button:hover {
+  color: rgb(161, 110, 197);
+  cursor: pointer;
+}
+
+nav button i {
+  font-size: 20px;
+  padding: 3px;
+  margin: 5px;
+}
+
+.mission:hover {
+  box-shadow: 0 0 100px gold;
+}
+
+.coming-soon-box {
+  border-style: solid;
+  margin: 30px;
+  background: rgb(228,85,148);
+  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: indigo;
+}
+
+>>>>>>> 321fe5971b8c36b3f018484c4c2a14741edd96cd
