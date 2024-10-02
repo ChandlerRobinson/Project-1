@@ -1,3 +1,4 @@
+
 /* stuff goes above here */
 #colorBlockred {
   width: 30px;
@@ -81,31 +82,24 @@ body {
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
+  background-color:gray;
 }
-
 .mission {
   margin: 50px;
   border-style: solid;
   border-radius: 30px;
   width: 350px;
   background: rgb(228, 85, 148);
-  background: radial-gradient(
-    circle,
-    rgba(228, 85, 148, 1) 0%,
-    rgba(63, 137, 223, 1) 100%
-  );
+  background: radial-gradient(circle,rgba(228, 85, 148, 1) 0%,rgba(63, 137, 223, 1) 100%);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
 }
-
 .mission-text {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 20px;
   padding: 10px;
 }
-
- 
 .modal{
   display: none;
   position: fixed;
@@ -118,7 +112,6 @@ body {
   background-color: black;
   background-color: rgba(0,0,0,0.4);
 }
-
 .modal-content{
 background-color: white;
 margin: 15% auto;
@@ -126,22 +119,18 @@ padding: 20px;
 border: 1px solid #888;
 width: 80%;
 }
-
 .close{
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus{
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
-
 /* NAVABAR */
 nav {
   display: flex;
@@ -183,7 +172,6 @@ nav button i {
   padding: 3px;
   margin: 5px;
 }
-
 /* NAVBAR MODALS */
 .size-modal-container {
   display: flex;
@@ -236,18 +224,41 @@ nav button i {
 .mission:hover {
   box-shadow: 0 0 100px gold;
 }
-
 .coming-soon-box {
   border-style: solid;
+  margin: 0px;
+  padding:0px;
+  background: rgb(228,85,148);
+  background: radial-gradient(circle, rgba(228,85,148,1) 0%, rgba(63,137,223,1) 100%);
   margin: 30px;
   background: rgb(228, 85, 148);
-  background: radial-gradient(
-    circle,
-    rgba(228, 85, 148, 1) 0%,
-    rgba(63, 137, 223, 1) 100%
-  );
+  background: radial-gradient(circle,rgba(228, 85, 148, 1) 0%,rgba(63, 137, 223, 1) 100%);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
+  height:320px;
 }
-
+.coming-soon-box h3 {
+  color:white;
+  font-family:cursive;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,45,45,1) 100%);
+  box-shadow: black;
+  border-radius:20px;
+  width:200px;
+  margin-left:45%;
+}
+.coming-soon-box h4 {
+  color:indigo;
+  margin-bottom:60px;
+}
+.boxes {
+  border-style: solid;
+  height:100px;
+  width:100px;
+  display:inline;
+  margin:60px;
+}
+.boxes:hover {
+  box-shadow: 0 0 100px gold;
+}
