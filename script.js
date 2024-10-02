@@ -1,3 +1,9 @@
+
+function changeImage(imagePath) {
+  document.getElementById("images").src = imagePath;
+}
+
+
 document
   .getElementById("reviewForm")
   .addEventListener("submit", function (event) {
@@ -13,6 +19,7 @@ document
     this.querySelector('input[type="submit"]').style.display = "none";
   });
 
+
 // Modal logic for size chart
 
 const open = document.getElementById("size-chart-btn");
@@ -26,3 +33,4 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   modalContainer.classList.remove("show");
 });
+

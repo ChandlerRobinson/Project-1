@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
     <title>Cool Shirts</title>
+
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/93bf94a79e.js"
@@ -13,6 +15,48 @@
   </head>
 
   <body>
+
+    <!-- stuff goes above here -->
+    <div class="image-container">
+      <header></header>
+      <div class="border">
+        <img
+          id="images"
+          src="images/red shirt.webp"
+          alt="Images"
+          width="300"
+          max-width="300"
+          max-height="282"
+        />
+        <div class="button-container">
+          <br />
+          <!-- buttons -->
+          <div class="btndir">
+            <button
+              id="colorBlockred"
+              onclick="changeImage('images/red shirt.webp')"
+            ></button>
+            <button
+              id="colorBlockblue"
+              onclick="changeImage('images/blue shirt.webp')"
+            ></button>
+            <button
+              id="colorBlockgreen"
+              onclick="changeImage('images/green shirt.jpg')"
+            ></button>
+            <button
+              id="colorBlockyellow"
+              onclick="changeImage('images/yellow shirt.jpg')"
+            ></button>
+          </div>
+          <div class="text-container">
+            <h2>S, M, L, XL</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- stuff goes below here -->
+
     <header>
       
       <!-- Coolshirts store navbar -->
@@ -86,6 +130,7 @@
             <h3>Coming Soon! New shirts dropping Nov 1st! *inserting 4 images* that will each glow within this box when hovered over</h3>
         </div>
     </footer>
+
 
   </body>
 </html>
