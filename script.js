@@ -119,4 +119,18 @@ close.addEventListener("click", () => {
   modalContainer.classList.remove("show");
 });
 
+document.getElementById('reviewForm').addEventListener('submit', function(event)  {
+  event.preventDefault();
+
+  document.getElementById('feedbackMessage').innerText = 'Your feedback is always appreciated';
+  document.getElementById('feedbackMessage').style.display = 'block';
+
+  document.getElementById('review').style.display = 'none';
+  this.querySelector('input[type="submit"]').style.display = 'none';
+
+  //refresh the page after 3 seconds
+  setTimeout(() => {
+    window.location.reload();
+  }, 3000);
+  });
 
