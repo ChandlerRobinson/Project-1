@@ -71,12 +71,23 @@
         </button>
         </div>
       </nav>
-    <div class="size-modal-container">
-      <div class="size-modal" id="size-modal">
-        <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
-        <button id="close-modal">Close</button>
-      </div>
-    </div>
+    <div class="size-modal-container" id="sizeModal">
+  <div class="size-modal">
+    <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
+    <form>
+      <label for="options">Coolshirts Size</label>
+      <select id="options" name="options">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="X-large">X-large</option>
+      </select>
+    </form>
+    <span id="selectedSize"></span>
+    <p id="confirmationMessage"></p>
+    <button id="close-modal">Close</button>
+  </div>
+</div>
 
     </header>
 
@@ -119,24 +130,7 @@
        </div>
     </div>
 
-      <div id="sizeModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-        <form>
-          <label for="options">Coolshirts Size</label>
-          <select id="options" name="options">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="X-large">X-large</option>
-          </select>
-        </form>
-        </div>
-      </div>
-
-
-      <span id="selectedSize"></span>
-      <p id="confirmationMessage"></p>
+      
 
      <!-- Coolshirts Locally sourced text paragraph -->
       <!-- Coolshirts -->
@@ -152,5 +146,5 @@
     </footer>
 
 
-  </body>
+</body>
 </html>

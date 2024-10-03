@@ -30,32 +30,31 @@ window.onclick = function(event) {
 }
 
 // Size modal
-const sizeModal = document.getElementById("sizeModal");
+const sizeModalContainer = document.getElementById("sizeModal");
 const sizeChartBtn = document.getElementById("size-chart-btn");
-const sizeCloseSpan = sizeModal.getElementsByClassName("close")[0];
-const options = document.getElementById('options');
+const sizeCloseBtn = document.getElementById("close-modal");
 
-// Correctly get the selected size element
-const selectedSizeElement = document.getElementById('selectedSize');
-
-// Display the modal when the button is clicked
+// Show the modal when the button is clicked
 sizeChartBtn.onclick = function() {
-  sizeModal.style.display = "block";
+  sizeModalContainer.style.display = "block";
 }
 
-// Close the modal when the 'x' span is clicked
-sizeCloseSpan.onclick = function() {
-  sizeModal.style.display = "none";
+// Close the modal when the 'Close' button is clicked
+sizeCloseBtn.onclick = function() {
+  sizeModalContainer.style.display = "none";
 }
 
 // Close the modal when clicking outside of it
 window.onclick = function(event) {
-  if (event.target == sizeModal) {
-    sizeModal.style.display = "none";
+  if (event.target == sizeModalContainer) {
+    sizeModalContainer.style.display = "none";
   }
 }
 
 // Handle selection
+const options = document.getElementById('options');
+const selectedSizeElement = document.getElementById('selectedSize');
+
 options.addEventListener('change', function() {
   const selectedSize = options.value;
   selectedSizeElement.innerText = `You have selected: ${selectedSize}`;
@@ -75,7 +74,7 @@ window.onload = function() {
 // Function to display confirmation message
 function displayConfirmationMessage(size) {
   const confirmationMessage = document.getElementById("confirmationMessage");
-  confirmationMessage.innerText = `You selected size (${size})`;
+  confirmationMessage.innerText = `selection confirmed`;
   confirmationMessage.style.display = "block";
   
   // Optional: hide confirmation message after 3 seconds
@@ -98,7 +97,7 @@ document
     const reviewText = document.getElementById("review").value;
     document.getElementById(
       "feedbackMessage"
-    ).innerText = `Your feedback: "${reviewText}" is always appreciated`;
+    ).innerText = `Your feedback is always appreciated`;
     document.getElementById("feedbackMessage").style.display = "block";
 
     document.getElementById("review").style.display = "none";
