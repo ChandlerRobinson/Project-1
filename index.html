@@ -31,12 +31,23 @@
         </button>
         </div>
       </nav>
-    <div class="size-modal-container">
-      <div class="size-modal" id="size-modal">
-        <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
-        <button id="close-modal">Close</button>
+      <div class="size-modal-container" id="sizeModal">
+        <div class="size-modal">
+          <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
+          <form>
+            <label for="options">Coolshirts Size</label>
+            <select id="options" name="options">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="X-large">X-large</option>
+            </select>
+          </form>
+          <span id="selectedSize"></span>
+          <p id="confirmationMessage"></p>
+          <button id="close-modal">Close</button>
+        </div>
       </div>
-    </div>
 
     </header>
 
@@ -78,37 +89,7 @@
   
 
 
-    <header>
-      
-      <!-- Coolshirts store navbar -->
-      <nav>
-        <h1>The Cool Shirts Store</h1>
-        <div class="buttons">
-        <button id="size-chart-btn"><i class="fa-solid fa-ruler-horizontal"></i><br>Size Chart</button>
-        <button id="review-btn"><i class="fa-regular fa-star"></i><br>Customer Reviews</button>
-        <button id="source-btn"><i class="fa-solid fa-shirt"></i><br>Where It's Made</button>
-        <button id="shopping-cart-btn" style="align-items: center;">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-        </div>
-      </nav>
-    <div class="size-modal-container" id="sizeModal">
-  <div class="size-modal">
-    <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
-    <form>
-      <label for="options">Coolshirts Size</label>
-      <select id="options" name="options">
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-        <option value="X-large">X-large</option>
-      </select>
-    </form>
-    <span id="selectedSize"></span>
-    <p id="confirmationMessage"></p>
-    <button id="close-modal">Close</button>
-  </div>
-</div>
+
 
 
 <main> <!-- MAIN "BODY" OF THE PAGE -->      
