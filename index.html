@@ -15,20 +15,41 @@
   </head>
 
   <body>
+   <header>
+      
+      <!-- COOLSHIRTS STORE NAVBAR  -->
+      <nav>
+        <div class="logo">
+        <img src="./images/Logo.png" style="width: 100px; height: 100px; margin: 0 8px;">
+        <h1>The CoolShirts Store</h1></div>
+        <div class="buttons">
+        <button id="size-chart-btn"><i class="fa-solid fa-ruler-horizontal"></i><br>Size Chart</button>
+        <button id="review-btn"><i class="fa-regular fa-star"></i><br>Customer Reviews</button>
+        <button id="source-btn"><i class="fa-solid fa-shirt"></i><br>Where It's Made</button>
+        <button id="shopping-cart-btn" style="align-items: center;">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        </div>
+      </nav>
+    <div class="size-modal-container">
+      <div class="size-modal" id="size-modal">
+        <img src="./images/Mens_T-Shirt_Size_Chart_1_.jpg" style="max-width: 650px;"><br>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
 
-    <!-- stuff goes above here -->
+    </header>
+
+    
     <div class="image-container">
-      <header></header>
-      <div class="border">
-        <img
+      <img
           id="images"
           src="images/red shirt.webp"
           alt="Images"
-          width="300"
-          max-width="300"
-          max-height="282"
+          width="300px"
+          max-height="282px"
         />
-        <div class="button-container">
+      <div class="button-container">
           <br />
           <!-- buttons -->
           <div class="btndir">
@@ -53,9 +74,9 @@
             <h2>S, M, L, XL</h2>
           </div>
         </div>
-      </div>
     </div>
-    <!-- stuff goes below here -->
+  
+
 
     <header>
       
@@ -89,16 +110,11 @@
   </div>
 </div>
 
-    </header>
 
-    <main>
+<main> <!-- MAIN "BODY" OF THE PAGE -->      
+       
+<!-- MISSION STATEMENT / MATERIALS SOURCE -->      
 
-      <!-- Coolshirts picture/ gallery  -->
-      <!-- Coolshirts drop -->
-      <!-- down menus modal(s)  -->
-      <!-- Coolshirts Locally sourced text paragraph -->
-
-      
     <div class="mission">
         <h3 class="mission-title">Our Mission</h3>
         <p class="mission-text">Our products are made with 100% organic cotton grown and sourced by our local farmers. Our goal is to influence fashion in a moral and ethical direction by promoting the use of sustainable materials. By choosing CoolShirts, you are standing up against unsafe labor conditions and products that other large companies contribute to.
@@ -112,8 +128,11 @@
         <h2> Customer Reviews</h2>
         
 
-  
 
+
+    <!-- TSHIRT CARD WITH COLOR AND SIZES -->
+    
+    
 
     <div>
         <!-- //Review Section -->
@@ -130,19 +149,39 @@
        </div>
     </div>
 
-      
 
-     <!-- Coolshirts Locally sourced text paragraph -->
-      <!-- Coolshirts -->
+      <div id="sizeModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        <form>
+          <label for="options">Coolshirts Size</label>
+          <select id="options" name="options">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="X-large">X-large</option>
+          </select>
+        </form>
+        </div>
+      </div>
+
+
     </main>
 
-    
-   
-    <!-- Coolshirts "Coming soon" -->
+      <span id="selectedSize"></span>
+      <p id="confirmationMessage"></p>
+
+
+ <!-- Coolshirts "Coming soon" / FOOTER -->
     <footer>
-        <div class="coming-soon-box">
-            <h3>Coming Soon! New shirts dropping Nov 1st! *inserting 4 images* that will each glow within this box when hovered over</h3>
-        </div>
+      <div class="coming-soon-box">
+        <h3>Coming Soon!</h3>
+        <h4>New shirts dropping November 1st!</h4>
+      <img class="boxes" src="./images/shirt1.jpeg" style="transform: scale(0.7)">
+      <img class="boxes" src="./images/shirt2.jpeg" style="transform: scale(0.7)">
+      <img class="boxes" src="./images/shirt3.jpeg" style="transform: scale(0.7)">
+      <img class="boxes" src="./images/shirt4.jpeg" style="transform: scale(0.7)">
+      </div>  
     </footer>
 
 

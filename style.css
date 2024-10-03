@@ -1,4 +1,18 @@
-/* stuff goes above here */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0px;
+}
+
+/* ////////////////  TSHIRT CARD ////////////////// */
+
 #colorBlockred {
   width: 30px;
   height: 30px;
@@ -9,6 +23,7 @@
   font-size: 16px;
   cursor: pointer;
 }
+
 #colorBlockblue {
   width: 30px;
   height: 30px;
@@ -40,16 +55,18 @@
   cursor: pointer;
 }
 .image-container {
-  margin: 10px;
-  max-width: 100%;
+  width: 300px;
   height: auto;
-  margin-top: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 2px;
+  padding: 0;
+  border: 6px solid indigo;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 2);
 }
+
+.image-container img {
+  border-radius: 20px;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -62,11 +79,7 @@
   align-items: center;
   flex-direction: row;
 }
-.border {
-  border: 6px solid indigo;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(2, 2, 2, 2);
-}
+
 .btndir {
   display: flex;
   flex-direction: row;
@@ -74,14 +87,8 @@
 #images {
   max-height: 282px !important;
 }
-/* stuff goes below here */
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
-}
+/* MISSION STATEMENT */
 
 .mission {
   margin: 50px;
@@ -98,62 +105,59 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
 }
-
 .mission-text {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 20px;
   padding: 10px;
 }
-
- 
-.modal{
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
-  height:100%;
+  height: 100%;
   overflow: auto;
   background-color: black;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
-.modal-content{
-background-color: white;
-margin: 15% auto;
-padding: 20px;
-border: 1px solid #888;
-width: 80%;
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
-
-.close{
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
-.close:focus{
+.close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
-
-
-/* NAVABAR */
+/* NAVBAR */
 nav {
+  width: 100%;
   display: flex;
   flex: 0;
   justify-content: space-between;
-  margin: 0 10%;
+  border-bottom: 2px solid rgb(231, 207, 74);
+  box-shadow: 0 3px 0 0 rgba(178, 176, 60, 0.162);
 }
 
-nav h1 {
-  font-size: 3rem;
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
   padding: 0.5rem;
   color: indigo;
+  margin-left: 30px;
 }
 
 nav .buttons {
@@ -161,6 +165,7 @@ nav .buttons {
   align-items: center;
   justify-content: space-evenly;
   min-width: 400px;
+  margin-right: 30px;
 }
 
 nav .buttons button {
@@ -183,7 +188,6 @@ nav button i {
   padding: 3px;
   margin: 5px;
 }
-
 /* NAVBAR MODALS */
 .size-modal-container {
   display: flex;
@@ -236,10 +240,10 @@ nav button i {
 .mission:hover {
   box-shadow: 0 0 100px gold;
 }
-
 .coming-soon-box {
   border-style: solid;
-  margin: 30px;
+  margin: 0px;
+  padding: 0px;
   background: rgb(228, 85, 148);
   background: radial-gradient(
     circle,
@@ -250,4 +254,28 @@ nav button i {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: indigo;
 }
-
+.coming-soon-box h3 {
+  color: white;
+  font-family: cursive;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(253, 45, 45, 1) 100%
+  );
+  box-shadow: black;
+  border-radius: 20px;
+  width: 200px;
+  margin-left: 45%;
+}
+.coming-soon-box h4 {
+  color: indigo;
+}
+.boxes {
+  display: inline;
+  border-style: solid;
+  border-radius: 20px;
+}
+.boxes:hover {
+  box-shadow: 0 0 100px gold;
+}
